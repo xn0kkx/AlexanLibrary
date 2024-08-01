@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Dork Search</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <h1>Google Dork Search</h1>
+  <form method="post">
+    <label for="title">Título exato que deseja pesquisar:</label>
+    <input type="text" id="title" name="title" required><br><br>
+    <label for="filetype">Formato de arquivo (por exemplo, pdf, docx, etc.):</label>
+    <input type="text" id="filetype" name="filetype" required><br><br>
+    <button type="submit">Pesquisar</button>
+  </form>
+</body>
+</html>
